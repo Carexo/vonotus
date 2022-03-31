@@ -1,0 +1,132 @@
+@import "_variables";
+@import "breakpoints";
+
+.packages {
+  h2 {
+    margin-top: 3.5rem;
+    text-align: center;
+  }
+
+  .packages-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  .package {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $light-blue;
+    margin: 1.5rem 1.5rem 6rem 1.5rem;
+    font-weight: bold;
+    font-family: "Play", sans-serif;
+    color: $blue;
+    width: clamp(183px, 90%, 371px);
+    height: 600px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -80px;
+      width: 100%;
+      height: 80px;
+      background: $light-blue;
+      transform: rotate(180deg);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    h3 {
+      font-family: "Pridi", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $blue;
+      width: 100%;
+      height: 100px;
+      margin: 0;
+      color: $white;
+      box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .price {
+      margin: 1rem 0 0.5rem 0;
+      font-size: 3.4rem;
+
+      span {
+        font-size: 2.75rem;
+      }
+    }
+
+    .tax {
+      margin: 0;
+      padding-bottom: 1rem;
+      font-size: 1.5rem;
+      border-bottom: 1px solid $blue;
+      text-align: center;
+      width: 70%;
+    }
+
+    ul {
+      padding: 0 1rem;
+      font-size: 1rem;
+      list-style: none;
+      li {
+
+        &::before {
+          content: "- ";
+
+        }
+      }
+    }
+
+    button {
+      position: absolute;
+      bottom: 0;
+      color: $white;
+      font-size: 1.5rem;
+      font-family: "Play", sans-serif;
+      background-color: $blue;
+      padding: 0.5rem 2rem;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
+
+      transition: background-color 0.3s;
+
+      &:hover, &:focus {
+        background-color: #0e4060;
+      }
+    }
+  }
+}
+
+@include mdMinBreakPoint() {
+  .packages {
+    h2 {
+      margin-top: 5rem;
+    }
+
+    .packages-wrapper {
+      margin-bottom: 7rem;
+    }
+    .package {
+    }
+
+  }
+}
+
+@include lgMinBreakPoint() {
+  .packages {
+    .packages-wrapper {
+
+      margin-bottom: 9rem;
+    }
+    h2 {
+      margin-top: 7rem;
+    }
+  }
+}

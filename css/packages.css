@@ -1,0 +1,87 @@
+.packages h2 {
+  margin-top: 3.5rem;
+  text-align: center; }
+
+.packages .packages-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5rem; }
+
+.packages .package {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(14, 87, 131, 0.21);
+  margin: 1.5rem 1.5rem 6rem 1.5rem;
+  font-weight: bold;
+  font-family: "Play", sans-serif;
+  color: #0E5783;
+  width: clamp(183px, 90%, 371px);
+  height: 600px; }
+  .packages .package::after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+    height: 80px;
+    background: rgba(14, 87, 131, 0.21);
+    transform: rotate(180deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .packages .package h3 {
+    font-family: "Pridi", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E5783;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    color: #fff;
+    box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.25); }
+  .packages .package .price {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 3.4rem; }
+    .packages .package .price span {
+      font-size: 2.75rem; }
+  .packages .package .tax {
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #0E5783;
+    text-align: center;
+    width: 70%; }
+  .packages .package ul {
+    padding: 0 1rem;
+    font-size: 1rem;
+    list-style: none; }
+    .packages .package ul li::before {
+      content: "- "; }
+  .packages .package button {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Play", sans-serif;
+    background-color: #0E5783;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; }
+    .packages .package button:hover, .packages .package button:focus {
+      background-color: #0e4060; }
+
+@media (min-width: 768px) {
+  .packages h2 {
+    margin-top: 5rem; }
+  .packages .packages-wrapper {
+    margin-bottom: 7rem; } }
+
+@media (min-width: 992px) {
+  .packages .packages-wrapper {
+    margin-bottom: 9rem; }
+  .packages h2 {
+    margin-top: 7rem; } }
