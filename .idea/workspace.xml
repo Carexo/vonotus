@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b7c90c8-a065-455e-ab0c-7b8199dae648" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/background_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/office_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/about_section.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/packages.scss" afterDir="false" />
-    </list>
+    <list default="true" id="8b7c90c8-a065-455e-ab0c-7b8199dae648" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +75,7 @@
       <workItem from="1648577607277" duration="4140000" />
       <workItem from="1648667027140" duration="2876000" />
       <workItem from="1648739997999" duration="3696000" />
-      <workItem from="1648746907014" duration="637000" />
+      <workItem from="1648746907014" duration="945000" />
     </task>
     <servers />
   </component>
