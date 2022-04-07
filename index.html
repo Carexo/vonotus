@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://kit.fontawesome.com/a1669c6ec8.js" crossorigin="anonymous"></script>
+    <script defer src="./js/main.js"></script>
     <title>Vonotus</title>
   </head>
   <body>
@@ -129,11 +130,11 @@
       </ul>
       <form>
         <label>Imię i Nazwisko</label>
-        <input type="text" class="name" placeholder="Imię i Nazwisko" required/>
+        <input type="text" name="name" class="name" placeholder="Imię i Nazwisko" required/>
         <label>E-mail</label>
-        <input type="email" class="email" placeholder="E-mail" required/>
+        <input type="email" name="email" class="email" placeholder="E-mail" required/>
         <label>Wiadomość</label>
-        <input type="text" class="message" placeholder="Wiadomość" required/>
+        <input type="text" name="message" class="message" placeholder="Wiadomość" required/>
         <input type="submit" value="WYŚLIJ"/>
       </form>
       <img src="./assets/images/logo.svg" alt="vonotus logo" />
@@ -143,5 +144,8 @@
         <p>Wykonanie: www.vonotus.agency</p>
       </div>
     </footer>
+    <div class="notification hidden">
+      <p></p>
+    </div>
   </body>
 </html>
